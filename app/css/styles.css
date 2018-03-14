@@ -4,7 +4,8 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: transparent; }
+  background-color: transparent;
+  font-family: arial; }
 
 .bodyroom {
   margin: 0;
@@ -17,14 +18,17 @@ body {
   text-align: center;
   position: fixed;
   left: 50%;
-  top: 20%;
+  top: 10%;
   transform: translate(-50%, 0%);
   width: 100vw;
   height: 100vh;
   font-size: 1em; }
 
 .startinput[type=text] {
-  font-size: 2em; }
+  margin-top: 2vh;
+  font-size: 2em;
+  max-width: 97vw;
+  padding-left: 5px; }
 
 .startbutton {
   font-size: 2em; }
@@ -40,7 +44,7 @@ body {
 
 .logoStartscreen {
   height: 15vh;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
   -webkit-filter: drop-shadow(0px 0px 3px #222);
   filter: drop-shadow(0px 0px 3px #222); }
 
@@ -243,7 +247,6 @@ hr {
 input {
   border: 0;
   color: inherit;
-  font-family: inherit;
   font-size: 100%;
   line-height: normal;
   margin: 0; }
@@ -400,3 +403,22 @@ p {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
+
+.ack {
+  position: fixed;
+  top: 80vh;
+  left: 5vw;
+  width: 90vw;
+  text-align: center; }
+
+.description {
+  font-size: 1.5em;
+  width: 90vw;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 4vh;
+  /*text-align: justify;*/ }
+
+@media screen and (max-width: 500px), screen and (max-height: 700px) {
+  .description {
+    display: none !important; } }

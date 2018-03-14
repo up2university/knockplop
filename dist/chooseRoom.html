@@ -9,13 +9,23 @@
 
   </head>
   <body>
-    <div  class="startdiv">
-      <a>
-        <img class="logoStartscreen" src="css/logo.png" viewbox="0 0 50 10"></img><br>
-      </a>
+    <div class="startdiv">
+      <a href="https://up2university.eu/">
+        <img src="css/logo.png" class="logoStartscreen" viewbox="0 0 50 10"></img><br>
+      </a>            
+      <div class="description">
+          Knockplop is an open source multi participant peer-to-peer WebRTC based collaboration tool.<br>The service is based on videorooms, and simply connects everybody visiting the same URL.
+      </div>
+      <div class="description">
+          Enter the name of your room below and you are good to go!
+      </div>
       <input id="room" class="startinput" type="text" onkeypress="checkEnter(event)" value="" placeholder="your room name">
-      <button class="startbutton" onclick = "start(location.href)">enter your room</button>
+      <button class="startbutton" onclick = "start(location.href)">Go!</button>
     </div>
+    <div class="ack">
+      The innovation action leading to these results has received funding from the European Union's Horizon 2020 research and innovation programme under Grant Aggrement No. 732049 - Up2U<br>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" width="60px">
+    </div>   
   </body>
   <script>
     var room = document.getElementById("room");
