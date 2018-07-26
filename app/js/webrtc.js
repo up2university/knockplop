@@ -39,6 +39,7 @@ function getScreenSuccess (stream) {
   participantList["localVideo"].screenStream = stream
   document.querySelector('video').srcObject = stream;
   changeStreamsInPeerConnections(prevLocalStream, stream);
+  document.querySelector('video').removeAttribute("style");
 }
 
 function getChromeScreenSuccess(screenStream) {
@@ -600,6 +601,10 @@ function toggleScreenshare() {
   } else {
     // Currently sharing the screen, so switch to camera.
     getCam();
+     document.querySelector('video').style.cssText = "-moz-transform: scale(-1, 1); \
+          -webkit-transform: scale(-1, 1); -o-transform: scale(-1, 1); \
+          transform: scale(-1, 1); filter: FlipH;";
+
   }
 }
 
