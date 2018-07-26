@@ -5,15 +5,15 @@
   "dependencies": {
     "express": "^4.14.0",
     "request": "^2.75.0",
-    "socket.io": "^1.4.6",
+    "socket.io": "^2.1.1",
     "ws": "^3.0.0"
   },
   "devDependencies": {
     "bower": "^1.7.9",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-concat": "^2.6.0",
-    "gulp-nodemon": "^2.1.0",
-    "gulp-sass": "^2.3.2",
+    "gulp-sass": "^4.0.1",
+    "pm2": "^3.0.2",
     "wiredep": "^4.0.0"
   }
 }
