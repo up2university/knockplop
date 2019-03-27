@@ -1286,7 +1286,7 @@ function pageReady() {
   // End JQuery GUI stuff
 
   // getting some HTML-elements we need later and roomname:
-  room = document.URL.split("/")[3];
+  room = document.URL.split("/")[3].split('?')[0];
   localVideo = document.getElementById('localVideo');
   videoContainer = document.getElementById('videoContainer');
   bigVideoContainer = document.getElementById('bigVideoContainer');
